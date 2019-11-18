@@ -1,5 +1,5 @@
 let resumeDate = {
-  "name": "Weiliang Ying",
+  "name": "Mark Ying",
   "role": "Junior developer",
   "roleDescription": "I like dabbling in various parts of web development and like to learn about new technologies, attend tech event or simply play games in my free time.",
   "socialLinks":[

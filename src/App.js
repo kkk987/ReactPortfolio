@@ -4,6 +4,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Footer from './components/Footer';
 import resumeData from './resumeData';
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 

@@ -7,7 +7,7 @@ const SocialLink = props => {
     <a 
       href={url}
     >
-      <FontAwesomeIcon icon={['fab', iconName]} size="3x" spin/>
+      <FontAwesomeIcon icon={['fab', iconName]} size="3x" />
       
     </a>
   )

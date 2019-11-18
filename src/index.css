@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,7 +6,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-image: url("https://images.pexels.com/photos/373892/pexels-photo-373892.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+  ); */
 }
+
+/* .bg-img { 
+  background-image: url("https://garzamercadocapital.com/wp-content/uploads/2019/04/37c4b583e162cdfd920c1293a922f6a8.jpg#.XdHfIhguDek.link") ;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  background-color: #999;
+
+}
+
+.img-responsive {
+  display: block; 
+  max-width: 100%;
+  height: auto;
+}  */
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

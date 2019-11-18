@@ -23,34 +23,56 @@ export default class Header extends Component {
     const { resumeData } = this.props;
     const { socialLinks } = resumeData
     return (
-        <Fragment>
-          <Navbar color="info" fixed="top" active={active}>
-            <Navbar.Brand>
-              <Navbar.Burger 
-                onClick={this.handleClick} 
-              />
-            </Navbar.Brand>
-            <Navbar.Menu>
-              <Nav />
-            </Navbar.Menu>
-          </Navbar>
-          <Section>
-              <Banner 
-                resumeData={resumeData}
-              />
+      <Fragment>
+          <Section class="hero is-fullheight bg-img img-responsive">
+            
+            <div class="hero-head">
+              <Navbar color="info" fixed="top" active={active} >
+                <Navbar.Brand>
+                  <Navbar.Burger 
+                    onClick={this.handleClick} 
+                  />
+                </Navbar.Brand>
+                <Navbar.Menu>
+                  <Nav />
+                </Navbar.Menu>
+              </Navbar>
+            </div>
+            <div class="hero-body">
+              <div class="container">
+                <Section>
+                  <Banner 
+                    resumeData={resumeData}
+                  />
+                </Section>
+                  <div 
+                    class=
+                      "is-divider" 
+                    // data-content=
+                    //   "SOCIAL LINKS"
+                    >
+                  </div>
+                <Section>
+                  {socialLinks && socialLinks.map(socialLink => (
+                    <SocialLink 
+                      key={socialLink.name}
+                      name={socialLink.name}
+                      url={socialLink.url}
+                      iconName={socialLink.iconName}
+                    />
+                  ))}
+                </Section>
+              </div>
+            </div>
+
+            <div class="hero-foot">
+            </div>
           </Section>
-          <div class="is-divider" data-content="SOCIAL LINKS"></div>
-          <Section>
-            {socialLinks && socialLinks.map(socialLink => (
-              <SocialLink 
-                key={socialLink.name}
-                name={socialLink.name}
-                url={socialLink.url}
-                iconName={socialLink.iconName}
-              />
-            ))}
-          </Section>
+
+          
+
         </Fragment>
+   
     )
   }
 }
